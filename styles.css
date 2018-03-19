@@ -1,0 +1,214 @@
+/* Color Palette
+GUNMETAL: #2B2D42;
+GRAY-BLUE #8D99AE;
+ANTI-FLASH WHITE #EDF2F4;
+RED (PANTONE)#EF233C;
+MEDIUM CANDY APPLE RED #D90429;
+*/
+/*
+font-family: 'Open Sans', sans-serif;
+font-family: 'Caveat', cursive;
+*/
+/*-------------------------*/
+
+@media print
+{
+    .no-print, .no-print *
+    {
+        display: none !important;
+    }
+
+    #work {
+	  	page-break-after: always;
+    }
+}
+
+
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body {
+	font-family:  'Open Sans', sans-serif;
+	margin: 0;
+}
+
+
+
+
+h1, h2 {
+	font-family: 'Caveat', cursive;
+	font-weight: normal;
+}
+
+h1 {
+	font-size: 80px;
+}
+
+h2 {
+	font-size: 40px;
+	margin-top: 0;
+}
+
+h3 {
+	margin: 0;
+}
+
+a {
+	color: #EF233C;
+}
+a:hover {
+	text-decoration: none;
+}
+
+/* Header */
+header {
+	padding-top: 50px ;
+	position: relative;
+}
+
+/*Header & footer*/
+header, footer {
+	background: #2B2D42;
+	color: #8D99AE;
+}
+
+
+/*header*/
+/* header {
+	text-align: center;
+} */
+
+header h1, header h2 {
+	color: #EDF2F4;
+	margin: 0;
+}
+
+.profile-img {
+	border-radius: 50%;
+
+}
+
+/*footer*/
+footer {
+	text-align: center;
+}
+.contact-info a{
+	/* background: white; */
+	padding: 10px;
+	display: inline-block;
+}
+
+
+
+/* Navigation
+-----------------------------------*/
+nav {
+	text-align: center;
+	background: white;
+	position: fixed;
+	top: 0;
+	width: 100%;
+}
+
+nav a {
+	display: inline-block;
+	padding: 15px 20px;
+	text-decoration: none;
+	text-transform: uppercase;
+	font-weight: 700;
+
+}
+
+/* Work Experience
+----------------------------------*/
+.work {
+	background: #EDF2F4;
+}
+
+.job-description {
+	margin-bottom: 25px;
+}
+
+.job-description p:first-of-type {
+	margin-top: 0;
+}
+
+h3 ~ p {
+	margin: 0;
+}
+
+/*Education
+--------------------------------*/
+.education {
+	/* background: #8D99AE; */
+	background: linear-gradient(rgba(141, 153, 174,0.8),
+  rgba(141, 153, 174,0.5)),
+  url(images/firewatch.jpg) no-repeat fixed;
+  background-size: cover;
+}
+
+p + h3 {
+	margin-top: 30px;
+}
+
+.content-wrap {
+    max-width: 950px;
+    margin: 0 auto;
+    padding: 60px 50px;
+    overflow: hidden;
+}
+
+
+
+.uppercase
+{
+	text-transform: uppercase;
+}
+
+.btn {
+
+	text-decoration: none;
+	background: #EF233C;
+	color: white;
+	padding: 10px;
+	display: inline-block;
+}
+
+.download {
+	position: absolute;
+	bottom: 0;
+	right: 0;
+}
+
+/* Media Queries
+--------------------------------*/
+@media (min-width: 900px) {
+	.col-narrow {
+		width: 30%;
+		float:  left;
+		/* border: 1px solid black; */
+		/* min-height: 175px; */
+	}
+
+	.col-wide {
+		width: 70%;
+		float:  left;
+		padding-left: 20px;
+		/* border: 1px solid black; */
+		/* min-height: 175px; */
+	}
+}
+
+@media (max-width: 899px) {
+	header {
+	text-align: center;
+	}
+	.profile-img {
+		width: 200px;
+	}
+}
