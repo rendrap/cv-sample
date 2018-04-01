@@ -113,7 +113,22 @@
             </div>
             <p>Copyright 2018 by Rendra Pradana</p>
         </div>
+        <div id="gitalk-container">
+        </div>
+    
     </footer>
+    <script type="text/javascript">
+      var gitalk = new Gitalk({
+        clientID: '33582f4935e4f56ea81b',
+        clientSecret: 'a0d1cea2c5c1ee532a6f906decfe89d7c9c37042',
+        repo: 'cv-sample',
+        owner: 'rendrap',
+        admin: ['rendrap'],
+        id: 'Demo',
+        distractionFreeMode: true
+      });
+      gitalk.render('gitalk-container');
+    </script>
 </body>
 
 </html>
